@@ -1,6 +1,12 @@
 * {
   padding: 0; }
 
+html, body {
+  background: #fafafa; }
+
+html {
+  overflow-y: scroll; }
+
 .glyph-progress {
   height: 96px;
   width: 96px;
@@ -81,9 +87,6 @@
       font-size: 1em; }
     .aboutme-viewport .intro .summary {
       font-size: 1em; }
-
-html, body {
-  background: #fafafa; }
 
 header {
   position: relative;

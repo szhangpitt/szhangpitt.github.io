@@ -6,6 +6,14 @@
 }
 
 
+html, body{
+	// height: 100%;
+	background: #fafafa;
+}
+
+html {
+	overflow-y: scroll;
+}
 .glyph-progress {
 	height: 96px;
 	width: 96px;
@@ -130,11 +138,6 @@
 		}
 	}
 
-}
-
-html, body{
-	// height: 100%;
-	background: #fafafa;
 }
 
 header{

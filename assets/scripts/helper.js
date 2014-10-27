@@ -148,29 +148,20 @@ appModule.directive('visibleOnMark', [function () {
             });
         }
     };
-}])
+}]);
 
-
-/*appModule.directive('twinkleTag', [function () {
+appModule.directive('visibleOnTime', [function () {
     return {
         restrict: 'A',
         scope: {
-            name: '@', 
-            value: '@'
+            time: '@'
         },
         link: function (scope, element, attrs) {
-            console.log('twinkleTag', scope.name, scope.value);
-            var name = scope.name,
-                value = parseInt(scope.value);
-
-            element.css({
-                'font-size': (16 + skill.value * 24) + 'px', 
-                'line-height': '1.5', 
-                'transition': 'top 0.4s ease ' +  (skill.value) * 3 + 's' + ',' + 'opacity 0.4s ease ' +  skill.value * 3 + 's' + ',' + 'transform 0.4s ease ', 
-                'top': (loadPercentage.skills === 100) && '0' || '10px', 
-                'animation-delay': (10 + skill.value * 6) + 's'
-            });
-
+            element.addClass('transparent-first');
+            var time = parseInt(scope.time || 400);
+            setTimeout(function(){
+                element.addClass('visible');
+            }, time);
         }
     };
-}])*/
+}])

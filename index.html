@@ -1,13 +1,15 @@
 <!doctype html>
 <html ng-app="tagdemo">
 <head>
-  <title>Impressive</title>
+  <title>Impressive - Shaopeng Zhang</title>
   <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="bootflat/css/bootflat.css">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="assets/styles/main.css">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="icon" href="assets/images/keyboard16.png" sizes="16x16">
+  <link rel="icon" href="assets/images/keyboard32.png" sizes="32x32">
   <script type="text/javascript" src="http://platform.linkedin.com/in.js">
       api_key: 758va66jwo20ou
       authorize: false
@@ -37,9 +39,9 @@
            
 
            <div ng-if="!$parent.staticApp" class="how-to-use transparent-first" ng-class="{'visible': $parent.linkedInLoaded() && !$parent.linkedInAuthenticated() && !visible('linkedIn'), 'collapsed': $parent.linkedInLoaded() && $parent.linkedInAuthenticated()}">
-               <span class="fa fa-hand-o-up center-block bouncing-animation top-space-xs"></span>
-               <p class=" top-space-sm">{{$parent.possiblyOnMobile && 'Tap' || 'Click'}} and sign in to access your profile.</p>
-               <p ng-if="$parent.possiblyOnMobile"><i>Are you using a smart phone? You probably need to come back to this page and refresh after you sign in. </i></p>
+               <span class="fa fa-hand-o-up center-block bouncing-animation top-space-xs" visible-on-time time="1500"></span>
+               <p class=" top-space-sm" visible-on-time time="1500">{{$parent.possiblyOnMobile && 'Tap' || 'Click'}} and sign in to access your profile.</p>
+               <p ng-if="$parent.possiblyOnMobile" visible-on-time time="1500"><i>Are you using a smart phone? You probably need to come back to this page and refresh after you sign in. </i></p>
                
            </div>
 
@@ -161,13 +163,19 @@
   
               <a ng-if="profile.publicProfileUrl" target="_blank" ng-href="{{profile.publicProfileUrl}}" class="btn btn-primary" ><span class="glyphicon glyphicon-new-window"></span>&nbsp;&nbsp;See {{profile.firstName}}'s LinkedIn Page</a>
 </div>
-<div class="top-space">
+<div class="top-space" ng-if="$parent.staticApp">
             <a class="btn btn-primary" ng-href=".?view=me">Pimp Up My LinkedIn Profile!</a>
 </div>
             <div class="top-space"><script src="//platform.linkedin.com/in.js" type="text/javascript">
             lang: en_US
             </script>
             <script type="IN/Share" data-url="http://szhangpitt.github.io/scrolldemo/?view=shaopeng" data-counter="right"></script>
+
+           
+          </div>
+
+          <div ng-if="!$parent.staticApp" class="top-space-lg">
+            <a href="javascript:window.location.href=window.location.href">Sign out my LinkedIn profile</a>
           </div>
         </div>
         
