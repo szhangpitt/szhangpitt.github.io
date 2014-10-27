@@ -1,0 +1,425 @@
+{
+    "_key": "~",
+    "educations": {
+        "_total": 2,
+        "values": [
+            {
+                "activities": "ACM, ASIS/T, Pittsburgh Cares",
+                "degree": "Master of Science",
+                "endDate": {
+                    "year": 2010
+                },
+                "fieldOfStudy": "Information Science",
+                "id": 43000730,
+                "notes": "Specilized in Human Computer Interaction, Information Visualization, and Web 2.0 technologies. Developed a series of Rich Internet Apps for mobile phone, PC and touchscreen interfaces.\nProjects:\n- MSIS Course Planning System (ASP.NET)\n- Flickr On-the-Fly Series (HTML+CSS+AJAX)\n- iSchool TapMe! System (Touchscreen + Social Web)\n- iSchool Research Visualization (Adobe Flex)",
+                "schoolName": "University of Pittsburgh",
+                "startDate": {
+                    "year": 2009
+                }
+            },
+            {
+                "activities": "Editor of university newspaper, Vice Batallion Commander in University Millitary training",
+                "degree": "B.E.",
+                "endDate": {
+                    "year": 2009
+                },
+                "fieldOfStudy": "Computer Science",
+                "id": 43025521,
+                "notes": "Took a wide range of programming courses and focused on Embedded System and Human Computer Interaction\n- Graduation Work: \"Vision-based Interactive Game\"\n- 3rd Prize in China National Electronic Design Contest: \"Double-layer Information Security System using Xilinx FPGA\"",
+                "schoolName": "Beijing Jiaotong University",
+                "startDate": {
+                    "year": 2005
+                }
+            }
+        ]
+    },
+    "firstName": "Shaopeng",
+    "headline": "User Interface Developer at Siemens Corporate Research",
+    "id": "qC72fmJGlB",
+    "lastName": "Zhang",
+    "pictureUrls": {
+        "_total": 1,
+        "values": [
+            "https://media.licdn.com/mpr/mprx/0_7BV1hxHT9Vuwj3Dv26Zj5Yw3tw1wZiDvDzkY6Oq7s0tHxGxR7bU0kZSXfJ9"
+        ]
+    },
+    "positions": {
+        "_total": 7,
+        "values": [
+            {
+                "company": {
+                    "id": 1043,
+                    "name": "Siemens"
+                },
+                "id": 210137822,
+                "isCurrent": true,
+                "startDate": {
+                    "month": 1,
+                    "year": 2013
+                },
+                "summary": "(1) Developed front end prototypes and products, with technologies including HTML5, CSS3, Object Oriented JavaScript, WPF, Flex, ActionScript, PHP, Node.js, D3 etc., from desktop to mobile, in-browser or standalone. \n(2) Provided consulting to prototyping and developing needs for 20+ projects across 4 sectors Siemens. \n(3) Led 3 mobile UX projects including activities from requirements and design to development and deployment. \n(4) Designed and conducted 3 usability testings with wireframes and prototypes on mobile devices. \n(5) Led knowledge sharing activities within our multi-disciplinary team.  \n(6) Recruited and managed more than 20 interns, two of which converted to full-time employees.",
+                "title": "Front End Developer"
+            },
+            {
+                "company": {
+                    "id": 1043,
+                    "name": "Siemens"
+                },
+                "endDate": {
+                    "month": 12,
+                    "year": 2012
+                },
+                "id": 598332990,
+                "isCurrent": false,
+                "startDate": {
+                    "month": 8,
+                    "year": 2011
+                },
+                "summary": "(1) Developed software prototypes that showcase innovative user interactions and UI concepts. \n(2) Implemented and delivered code in support of customer product managers. \n(3) Provided supporting in prototyping activities and technology advancement within UX group.\n(4) Recruited and managed interns for UX group.",
+                "title": "Associate User Interface Developer"
+            },
+            {
+                "company": {
+                    "id": 1043,
+                    "name": "Siemens"
+                },
+                "endDate": {
+                    "month": 8,
+                    "year": 2011
+                },
+                "id": 167176429,
+                "isCurrent": false,
+                "startDate": {
+                    "month": 2,
+                    "year": 2011
+                },
+                "summary": "(1) Developed software prototypes that showcase innovative user interactions and UI concepts. \n(2) Regularly shared latest technology and design trends within UX group.",
+                "title": "User Interface Prototype Development Intern"
+            },
+            {
+                "company": {
+                    "id": 3461,
+                    "name": "University of Pittsburgh"
+                },
+                "endDate": {
+                    "month": 2,
+                    "year": 2011
+                },
+                "id": 139280498,
+                "isCurrent": false,
+                "startDate": {
+                    "month": 9,
+                    "year": 2010
+                },
+                "summary": "(1) Conducted research on incorporating social features into online communities to promote user participation and content contribution\n(2) Designed interactions and interface for online communities with sketches, wireframes and storyboards\n(3) Coded the front end of Conference Navigator 3 - an online academic communities with HTML, JQuery, PHP and Ajax technologies, and integrated with Apache - MySQL backend.",
+                "title": "Graduate Student Researcher / Application Developer"
+            },
+            {
+                "company": {
+                    "id": 3461,
+                    "name": "University of Pittsburgh"
+                },
+                "endDate": {
+                    "month": 8,
+                    "year": 2010
+                },
+                "id": 144223174,
+                "isCurrent": false,
+                "startDate": {
+                    "month": 5,
+                    "year": 2010
+                },
+                "summary": "(1) Designed, developed, and deployed a public touchscreen display system at iSchool. \n(2) Managed the project through multiple iteration from requirement analysis to usability test. \n(3) Conducted interviews, questionnaires and focus groups to better understand stakeholders’ requirements. \n(4) Designed wireframes with Flash Catalyst and then quickly converted to prototype. \n(5) Programmed with Flex framework to implement functionality. \n(6) Observed user behavior and analyzed clicking plot to guide redesign.",
+                "title": "Interaction Designer / Application Developer (Summer Internship)"
+            },
+            {
+                "company": {
+                    "id": 3461,
+                    "name": "University of Pittsburgh"
+                },
+                "endDate": {
+                    "month": 5,
+                    "year": 2010
+                },
+                "id": 103334162,
+                "isCurrent": false,
+                "startDate": {
+                    "month": 11,
+                    "year": 2009
+                },
+                "summary": "(1) Provided technical assistance to lab users. \n(2) Managed software distribution to students. \n(3) Ensured computers and printers are functioning properly. \n(4) Filed print jobs in organized manner.",
+                "title": "Computing Lab Consultant, CSSD"
+            },
+            {
+                "company": {
+                    "id": 507720,
+                    "name": "Beijing Jiaotong University"
+                },
+                "endDate": {
+                    "month": 12,
+                    "year": 2008
+                },
+                "id": 103644244,
+                "isCurrent": false,
+                "startDate": {
+                    "month": 6,
+                    "year": 2008
+                },
+                "summary": "(1) Participated in embedded system project for National Electronic Design Contest, China, 2008. \n(2) Led a team and developed an FPGA encryption system and won 3rd prize in the contest. \n(3) Translated technical documents from English to Chinese to support team members. \n(4) Set up developing environment and software. \n(5) Purchased electronic components.",
+                "title": "FPGA Development Team Member"
+            }
+        ]
+    },
+    "projects": {
+        "_total": 6,
+        "values": [
+            {
+                "description": "Conference Navigator is a personal conference scheduling tool with social linking and recommendation features. The system is developed as part of a NSF-supported project by Dr. Brusilovsky from the University of Pittsburgh iSchool. Users can control access to their information. My part in the team was interaction design and front-end+middle layer developing using jQuery and PHP. ",
+                "id": 27,
+                "name": "Conference Navigator",
+                "url": "http://halley.exp.sis.pitt.edu/cn3/program2.php?conferenceID=47"
+            },
+            {
+                "description": "- A public touchscreen display system providing research talks, events, announcements, jobs and other useful information to iSchool.\n- Designed and developed with Adobe Illustrator, Photoshop, Flash Catalyst, Flex framework.\n-Users can view different categories of information and send interesting information in email, either to themselves or to their friends. Authorized users can also publish announcements to the screen via a blog.\n-The system updates the latest information every 10 minutes and is easy configurable that only requires internet connection on the running machine.",
+                "id": 29,
+                "name": "Touch the iSchool",
+                "url": "http://youtu.be/n9f_LP6P8VU"
+            },
+            {
+                "description": "A touchscreen application providing useful information to new students",
+                "id": 32,
+                "name": "iSchool New Student Welcome Touchscreen App",
+                "url": "http://www.ideaonthefly.com/flash/welcome/Main.html"
+            },
+            {
+                "description": "A just-for-fun animated Ajax-powered Flickr app to discover interesting photos by tags on Flickr. ",
+                "id": 35,
+                "name": "Flickr Twinkle",
+                "url": "http://szhangpitt.github.io/goodoldwebapps/Flickr/twinkle.html"
+            },
+            {
+                "description": "A computer game using webcam to capture user’s motion and interact with the user (designed and developed before Microsoft Kinect). Technologies used include Microsoft XNA framework(C#) and OpenCV. ",
+                "id": 44,
+                "name": "Motion-based Interactive Game",
+                "url": "http://youtu.be/g5ttA63mqSU"
+            },
+            {
+                "description": "Innovatively integrated Yahoo! Pipe and Eventur (http://eventur.us) RSS to Facebook page to automatically update cultural events in Pittsburgh. Boosted visits to Eventur website by 10 times with social network power. ",
+                "id": 46,
+                "name": "Eventur Facebook Page",
+                "url": "http://www.facebook.com/pages/Eventur-Events-in-Pittsburgh/117954101600897"
+            }
+        ]
+    },
+    "publicProfileUrl": "https://www.linkedin.com/in/shaopengzhang",
+    "skills": {
+        "_total": 34,
+        "values": [
+            {
+                "id": 598333027,
+                "skill": {
+                    "name": "jQuery"
+                }
+            },
+            {
+                "id": 598333028,
+                "skill": {
+                    "name": "HTML 5"
+                }
+            },
+            {
+                "id": 598333029,
+                "skill": {
+                    "name": "JavaScript"
+                }
+            },
+            {
+                "id": 598333030,
+                "skill": {
+                    "name": "User Interface Design"
+                }
+            },
+            {
+                "id": 598333031,
+                "skill": {
+                    "name": "PHP"
+                }
+            },
+            {
+                "id": 598333032,
+                "skill": {
+                    "name": "Java"
+                }
+            },
+            {
+                "id": 598333033,
+                "skill": {
+                    "name": "Prototyping"
+                }
+            },
+            {
+                "id": 598333034,
+                "skill": {
+                    "name": "AJAX"
+                }
+            },
+            {
+                "id": 598333035,
+                "skill": {
+                    "name": "CSS"
+                }
+            },
+            {
+                "id": 598333036,
+                "skill": {
+                    "name": "Information Architecture"
+                }
+            },
+            {
+                "id": 598333037,
+                "skill": {
+                    "name": "ActionScript"
+                }
+            },
+            {
+                "id": 598333038,
+                "skill": {
+                    "name": "Web Applications"
+                }
+            },
+            {
+                "id": 598333039,
+                "skill": {
+                    "name": "HTML"
+                }
+            },
+            {
+                "id": 598333040,
+                "skill": {
+                    "name": "Flex"
+                }
+            },
+            {
+                "id": 598333041,
+                "skill": {
+                    "name": "WPF"
+                }
+            },
+            {
+                "id": 598333042,
+                "skill": {
+                    "name": "CSS3"
+                }
+            },
+            {
+                "id": 598333043,
+                "skill": {
+                    "name": "Flash Catalyst"
+                }
+            },
+            {
+                "id": 598333044,
+                "skill": {
+                    "name": "SQL"
+                }
+            },
+            {
+                "id": 598333045,
+                "skill": {
+                    "name": "Silverlight"
+                }
+            },
+            {
+                "id": 598333046,
+                "skill": {
+                    "name": "Expression Blend"
+                }
+            },
+            {
+                "id": 598333047,
+                "skill": {
+                    "name": "Dreamweaver"
+                }
+            },
+            {
+                "id": 598333048,
+                "skill": {
+                    "name": "ClearCase"
+                }
+            },
+            {
+                "id": 598333049,
+                "skill": {
+                    "name": "CoffeeScript"
+                }
+            },
+            {
+                "id": 598333050,
+                "skill": {
+                    "name": "Node.js"
+                }
+            },
+            {
+                "id": 598333051,
+                "skill": {
+                    "name": "Information Visualization"
+                }
+            },
+            {
+                "id": 598333052,
+                "skill": {
+                    "name": "Project Management"
+                }
+            },
+            {
+                "id": 598333053,
+                "skill": {
+                    "name": "bootstrap"
+                }
+            },
+            {
+                "id": 598333054,
+                "skill": {
+                    "name": "d3.js"
+                }
+            },
+            {
+                "id": 598333055,
+                "skill": {
+                    "name": "Usability Testing"
+                }
+            },
+            {
+                "id": 598333056,
+                "skill": {
+                    "name": "Python"
+                }
+            },
+            {
+                "id": 598333057,
+                "skill": {
+                    "name": "SASS"
+                }
+            },
+            {
+                "id": 598333058,
+                "skill": {
+                    "name": "Amazon EC2"
+                }
+            },
+            {
+                "id": 598333059,
+                "skill": {
+                    "name": "AngularJS"
+                }
+            },
+            {
+                "id": 598333060,
+                "skill": {
+                    "name": "User-centered Design"
+                }
+            }
+        ]
+    },
+    "summary": "View my website at http://shaopeng.us\n\nAbout me:\n(1) Expert knowledge in Front End Development. \n(2) Professional in User Experience Design, with project leading experience. \n(3) Project experience in latest front end technology (Object Oriented JavaScript, HTML5, CSS3, AngularJS, Bootstrap, jQuery), as well as back end technology (Node.js, Express, PHP, MySQL, MongoDB). \n(4) Always passionate about doing mash up with different technologies like using Flickr API or LinkedIn API sitting on Amazon EC2 cloud, or just a static GitHub page. \n(5) Loves photography as a hobby. On Flickr Explore 7 times. My photostream: http://www.flickr.com/photos/47894230@N06/"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "tagdemo",
+  "version": "0.0.0",
+  "description": "a prototype to demo image recognition and tag generating tech",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://shaopengpitt@bitbucket.org/shaopengpitt/tagdemo.git"
+  },
+  "author": "Shaopeng Zhang",
+  "license": "All rights reserved. ",
+  "dependencies": {
+    "gulp": "^3.8.8",
+    "gulp-concat": "^2.4.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^1.0.0",
+    "gulp-sourcemaps": "^1.2.4"
+  },
+  "devDependencies": {}
+}

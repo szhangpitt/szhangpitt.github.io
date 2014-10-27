@@ -1,0 +1,187 @@
+<!doctype html>
+<html ng-app="tagdemo">
+<head>
+  <title>Impressive</title>
+  <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="bootflat/css/bootflat.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="assets/styles/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <script type="text/javascript" src="http://platform.linkedin.com/in.js">
+      api_key: 758va66jwo20ou
+      authorize: false
+  </script>
+  <!--  -->
+</head>
+
+<body id="appBody" ng-controller="AppController">
+
+
+  <header>
+    <!-- <h3>Proud of yourself</h3> -->
+
+  </header>
+
+  <div class="article-viewport" >
+    <article ng-controller="UIController" class="linear-scroll-animation">
+      <section id="step0" class="step text-center" ng-class="{'folded': completedSection >= 0}">
+        <div class="content">
+          <div load-progress-icon iconclass="fa fa-linkedin-square glyphicon" progress="{{loadPercentage.linkedIn}}" ></div>
+
+           <div ng-if="!$parent.staticApp">
+               <script type="in/Login" data-onAuth="loadData">
+
+               </script>
+           </div>
+           
+
+           <div ng-if="!$parent.staticApp" class="how-to-use transparent-first" ng-class="{'visible': $parent.linkedInLoaded() && !$parent.linkedInAuthenticated() && !visible('linkedIn'), 'collapsed': $parent.linkedInLoaded() && $parent.linkedInAuthenticated()}">
+               <span class="fa fa-hand-o-up center-block bouncing-animation top-space-xs"></span>
+               <p class=" top-space-sm">{{$parent.possiblyOnMobile && 'Tap' || 'Click'}} and sign in to access your profile.</p>
+               <p ng-if="$parent.possiblyOnMobile"><i>Are you using a smart phone? You probably need to come back to this page and refresh after you sign in. </i></p>
+               
+           </div>
+
+          <h1 class="transparent-first" visible-on-mark mark="{{visible('linkedIn')}}">{{$parent.staticApp ? '' : ''}} {{profile.firstName}} {{profile.lastName}}</h1>
+
+
+        </div>
+      </section>
+      <section id="step1" class="step text-center" ng-class="{'folded': completedSection >= 1}">
+        <div class="content" >
+          <h2><a class="btn btn-primary btn-lg" ng-click="scrollToSection(1);displaySectionContent(1, 'summary')">About me...</a></h2>           
+          <div load-progress-icon iconclass="glyphicon glyphicon-user" progress="{{loadPercentage.summary}}"></div>
+
+          <div class="aboutme-viewport row transparent-first"  visible-on-mark mark="{{visible('summary')}}">
+            <img ng-src="{{profile.pictureUrls.values[0]}}" class="col-sm-2 col-sm-offset-1 col-lg-2 col-lg-offset-2">
+            <div class="intro col-sm-8 col-lg-6 text-left">
+              <h4 class="headline text-lg">{{profile.headline}}</h4> 
+              <p class="text-left" break-at-n content="{{summary}}"></p>
+            </div>
+          </div>
+
+
+        </div>
+
+      </section>
+
+      <section id="step2" class="step text-center" ng-class="{'folded': completedSection >= 2}">
+        <div class="content">
+          <h2><a class="btn btn-lg btn-primary" ng-click="scrollToSection(2);displaySectionContent(2, 'educations')" >What do I know?</a></h2>
+          <div load-progress-icon iconclass="glyphicon fa fa-graduation-cap" progress="{{loadPercentage.educations}}" reverse="true"></div>
+
+          <div class="row education transparent-first" visible-on-mark mark="{{visible('educations')}}">
+            <div class="col-md-12">
+              <div class="timeline text-left">
+                <dl>
+                  <dt class="profile-picture">
+                    <img class="events-object img-rounded" ng-src="{{profile.pictureUrls.values[0]}}">
+                  </dt>
+                  <div ng-repeat="edu in educations track by $index">                    
+                    <dt ng-if="edu.id">{{edu.endDate.year}}</dt>
+                    <dd ng-if="edu.id" class="pos-{{$even ? 'right' : 'left'}} clearfix transparent-first" visible-on-mark mark="{{visible('educations')}}" ng-style="{'transition': 'opacity 0.4s ease-out' + ($index * 0.2) + 's'}">
+                      <div class="circ"></div>
+                      <div class="time">{{edu.startDate.year}} - {{edu.endDate.year || 'Present'}}</div>
+                      <div class="events" click-add-class toggleclass="expanded">
+                        <div class="pull-left">
+                          <img class="events-object img-rounded" ng-src="{{findSchoolLogoUrlFromCompay(edu.schoolName) || profile.pictureUrls.values[0]}}">
+                        </div>
+                        <div class="events-body">
+                          <h4 class="events-heading">{{edu.degree}}, {{edu.fieldOfStudy}}</h4>
+                          <h4 class="events-heading">{{edu.schoolName}}</h4>
+                          <p break-at-n content="{{edu.notes}}"></p>
+                        </div>
+                      </div>
+                    </dd>
+                  </div>
+
+
+                </dl>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </section>
+
+      <section id="step3" class="step text-center" ng-class="{'folded': completedSection >= 3}">
+        <div class="content" >
+          <h2><a class="btn btn-lg btn-primary" ng-click="scrollToSection(3);displaySectionContent(3, 'skills')" >What skills do I have?</a></h2>
+          <div load-progress-icon iconclass="glyphicon glyphicon-globe" progress="{{loadPercentage.skills}}"></div>
+          <ul class="adv-cloud">
+            <li ng-repeat="skill in skills" ng-style="{}" style="{{twinkleStyle(skill.value, loadPercentage.skills)}}" class="transparent-first" visible-on-mark mark="{{visible('skills')}}">{{skill.name}}</li>
+          </ul>
+
+        </div>
+
+      </section>
+
+      <section id="step4" class="step text-center" ng-class="{'folded': completedSection >= 4}">
+        <div class="content">
+          <h2><a class="btn btn-primary btn-lg" ng-click="scrollToSection(4); displaySectionContent(4, 'positions')">Work I have done...</a></h2>
+          <div load-progress-icon iconclass="glyphicon glyphicon-briefcase" progress="{{loadPercentage.positions}}"></div>
+          <div class="row transparent-first" visible-on-mark mark="{{visible('positions')}}">
+            <div class="col-md-12">
+              <div class="timeline text-left">
+                <dl>
+                  <dt class="profile-picture">
+                    <img class="events-object img-rounded" ng-src="{{profile.pictureUrls.values[0]}}">
+                  </dt>
+                  <div ng-repeat="p in positions track by $index" ng-class="{'current':p.isCurrent}">                    
+                    <dt ng-if="p.mark">{{p.mark}}</dt>
+                    <dd ng-if="p.id" class="pos-{{p.even ? 'right' : 'left'}} clearfix transparent-first" visible-on-mark mark="{{visible('positions')}}" ng-style="{'transition': 'opacity 0.4s ease-out' + ($index * 0.2) + 's'}">
+                      <div class="circ"></div>
+                      <div class="time">{{p.startDate.month | intToMonth}}, {{p | forHowLong}}</div>
+                      <div class="events" click-add-class toggleclass="expanded">
+                        <div class="pull-left logo-container">
+                          <span class="vertical-helper"></span>
+                          <img class="events-object img-rounded" ng-src="{{p.logoUrl}}">
+                        </div>
+                        <div class="events-body">
+                          <h4 class="events-heading">{{p.title}}</h4>
+                          <h4 class="events-heading">{{p.company.name}}</h4>
+                          <p break-at-n content="{{p.summary}}"></p>
+                        </div>
+                      </div>
+                    </dd>
+                  </div>
+
+
+                </dl>
+              </div>
+            </div>
+          </div>
+          <!-- <a href="." class="btn  btn-default reset transparent-first" visible-on-mark mark="{{visible('positions')}}">Do it again!</a> -->
+          <div class="transparent-first" visible-on-mark mark="{{visible('positions')}}">
+<div class="top-space-lg">
+  
+              <a ng-if="profile.publicProfileUrl" target="_blank" ng-href="{{profile.publicProfileUrl}}" class="btn btn-primary" ><span class="glyphicon glyphicon-new-window"></span>&nbsp;&nbsp;See {{profile.firstName}}'s LinkedIn Page</a>
+</div>
+<div class="top-space">
+            <a class="btn btn-primary" ng-href=".?view=me">Pimp Up My LinkedIn Profile!</a>
+</div>
+            <div class="top-space"><script src="//platform.linkedin.com/in.js" type="text/javascript">
+            lang: en_US
+            </script>
+            <script type="IN/Share" data-url="http://szhangpitt.github.io/scrolldemo/?view=shaopeng" data-counter="right"></script>
+          </div>
+        </div>
+        
+
+
+      </div>
+    </section>
+
+  </article>
+</div>
+
+
+  <script src="assets/libs/libs.js"></script>
+  <script src="assets/scripts/all.js"></script>
+
+</body>
+</html>
