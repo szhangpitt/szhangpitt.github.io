@@ -25,6 +25,10 @@ appModule.controller('AppController', ['$scope', '$rootScope', 'TagService', '$l
         //iphone: landspace 568x212, vertical 320x460
         $scope.possiblyOnMobile = window.innerWidth <= 568 || window.innerWidth === 1024;
 
+        $scope.onLinkedInJSLoad = function() {
+            $scope.lnkedInJSLoad = true;
+        }
+
         $scope.getLinkedInData = function() {
             IN.API.Profile()
             .ids(linkedInId)
