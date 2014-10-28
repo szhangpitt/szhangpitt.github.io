@@ -231,6 +231,8 @@ article {
 		position: relative;
 		top: 10px;
 
+		text-shadow: 0 1px 3px #ddd;
+
 		// @include transition (top 0.4s ease-out);
 
 		&.visible {
@@ -267,12 +269,11 @@ article {
 
 @include keyframes(twinkle) {
 	0% {
-		color: $darkgray-dark;
+		color: $darkgray-dark;		
 	}
 
 	50% {
-		color: lighten($darkgray-dark, 60%);
-		// @include transform (scale(1.1));
+		color: lighten($darkgray-dark, 60%);		
 	}
 
 	100% {
@@ -403,8 +404,12 @@ article {
 				@include box-shadow (0 0 8px #ccc);
 				@include transition (box-shadow 0.2s ease);
 
-				&:hover {
+				&:not(.expanded):hover {
 					@include box-shadow (0 0 12px #aaa);
+				}
+
+				&:not(.expanded):active {
+					@include box-shadow (0 0 24px #ccc);
 				}
 
 

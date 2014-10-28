@@ -149,7 +149,8 @@ article section.step {
   display: inline-block;
   margin: 8px 24px;
   position: relative;
-  top: 10px; }
+  top: 10px;
+  text-shadow: 0 1px 3px #ddd; }
   .adv-cloud li.visible {
     top: 0px;
     -webkit-animation: twinkle 5s infinite;
@@ -325,10 +326,14 @@ article section.step {
   -webkit-transition: box-shadow 0.2s ease;
   -moz-transition: box-shadow 0.2s ease;
   transition: box-shadow 0.2s ease; }
-  .timeline dl dd .events:hover {
+  .timeline dl dd .events:not(.expanded):hover {
     -webkit-box-shadow: 0 0 12px #aaa;
     -moz-box-shadow: 0 0 12px #aaa;
     box-shadow: 0 0 12px #aaa; }
+  .timeline dl dd .events:not(.expanded):active {
+    -webkit-box-shadow: 0 0 24px #ccc;
+    -moz-box-shadow: 0 0 24px #ccc;
+    box-shadow: 0 0 24px #ccc; }
   @media (max-width: 560px) {
     .timeline dl dd .events {
       float: none !important;
