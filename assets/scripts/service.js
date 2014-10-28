@@ -80,7 +80,7 @@ appModule.service('TagService', ['$http', '$rootScope', '$q', function ($http, $
     function getStaticCompanyLogos(INPositions) {
         if(INPositions.values && angular.isArray(INPositions.values)) {
             for (var i = 0; i < INPositions.values.length; i++ ) {
-                INPositions.values[i].logoUrl = that.companyUrlMap[INPositions.values[i].id];
+                INPositions.values[i].logoUrl = that.companyUrlMap[INPositions.values[i].company.id].logoUrl;
             }
         }
         return INPositions;
