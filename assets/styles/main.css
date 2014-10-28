@@ -282,146 +282,152 @@ article section.step {
   #step0 h1 {
     font-size: 28px; } }
 
-@media (max-width: 560px) {
-  .timeline dl:before {
-    left: 50%;
-    top: 130px;
-    bottom: 20px; } }
-@media (min-width: 561px) {
-  .timeline dl:before {
-    top: 76px; } }
-.timeline dl dt.profile-picture {
-  background-color: none;
-  -webkit-box-shadow: 0 0 8px #ccc;
-  -moz-box-shadow: 0 0 8px #ccc;
-  box-shadow: 0 0 8px #ccc;
-  width: 80px;
-  padding: 0; }
+.timeline {
+  margin-top: -40px; }
+  @media (max-width: 560px) {
+    .timeline dl:before {
+      left: 50%;
+      top: 130px;
+      bottom: 20px; } }
   @media (min-width: 561px) {
-    .timeline dl dt.profile-picture {
-      display: none; } }
-  @media (min-width: 561px) and (max-width: 767px) {
-    .timeline dl dt.profile-picture {
-      margin-left: 20px; } }
-  .timeline dl dt.profile-picture img {
-    width: 80px; }
-@media (max-width: 560px) {
-  .timeline dl dt {
-    margin: 0 auto 30px; } }
-.timeline dl dd .time {
-  width: auto; }
-  @media (max-width: 560px) {
-    .timeline dl dd .time {
-      top: 0;
-      position: static; } }
-  @media (min-width: 561px) and (max-width: 767px) {
-    .timeline dl dd .time {
-      top: 0;
-      left: 90px; } }
-@media (max-width: 560px) {
-  .timeline dl dd .circ {
-    display: none; } }
-.timeline dl dd .events {
-  padding-bottom: 10px;
-  -webkit-box-shadow: 0 0 8px #ccc;
-  -moz-box-shadow: 0 0 8px #ccc;
-  box-shadow: 0 0 8px #ccc;
-  -webkit-transition: box-shadow 0.2s ease;
-  -moz-transition: box-shadow 0.2s ease;
-  transition: box-shadow 0.2s ease; }
-  .timeline dl dd .events:not(.expanded):hover {
-    -webkit-box-shadow: 0 0 12px #aaa;
-    -moz-box-shadow: 0 0 12px #aaa;
-    box-shadow: 0 0 12px #aaa; }
-  .timeline dl dd .events:not(.expanded):active {
-    -webkit-box-shadow: 0 0 24px #ccc;
-    -moz-box-shadow: 0 0 24px #ccc;
-    box-shadow: 0 0 24px #ccc; }
-  @media (max-width: 560px) {
-    .timeline dl dd .events {
-      float: none !important;
-      margin-top: 0;
-      width: 100% !important; }
-      .timeline dl dd .events:before {
-        border-color: transparent transparent white transparent !important;
-        left: 12px !important;
-        top: -12px !important; } }
-  @media (min-width: 561px) and (max-width: 767px) {
-    .timeline dl dd .events {
-      float: left !important;
-      left: 90px; } }
-  .timeline dl dd .events .logo-container {
-    height: 48px;
-    margin-right: 10px; }
-    .timeline dl dd .events .logo-container .vertical-helper {
-      height: 100%;
-      display: inline-block;
-      vertical-align: middle; }
-    .timeline dl dd .events .logo-container img {
-      vertical-align: middle;
-      margin-right: 0; }
-  .timeline dl dd .events img {
-    width: 48px;
-    height: auto; }
-    @media (max-width: 560px) {
-      .timeline dl dd .events img {
+    .timeline dl:before {
+      top: 76px; } }
+  .timeline dl dt.profile-picture {
+    background-color: none;
+    -webkit-box-shadow: 0 0 8px #ccc;
+    -moz-box-shadow: 0 0 8px #ccc;
+    box-shadow: 0 0 8px #ccc;
+    width: 80px;
+    padding: 0; }
+    @media (min-width: 561px) {
+      .timeline dl dt.profile-picture {
         display: none; } }
-  .timeline dl dd .events .events-body .events-heading {
-    margin-bottom: 5px; }
-  .timeline dl dd .events .events-body p {
-    font-size: 0.9em;
-    padding-right: 1em;
-    margin-bottom: 0;
-    position: relative;
-    max-height: 2.8em;
-    -webkit-transition: max-height 0.2s ease-out 0s;
-    -moz-transition: max-height 0.2s ease-out 0s;
-    transition: max-height 0.2s ease-out 0s; }
-    .timeline dl dd .events .events-body p .mask {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: 1.5em;
-      opacity: 1;
-      background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
-      /* FF3.6+ */
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, #ffffff));
-      /* Chrome,Safari4+ */
-      background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
-      /* Chrome10+,Safari5.1+ */
-      background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
-      /* Opera 11.10+ */
-      background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
-      /* IE10+ */
-      background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
-      /* W3C */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
-      /* IE6-9 */
-      -webkit-transition: opacity 0.5s ease 0;
-      -moz-transition: opacity 0.5s ease 0;
-      transition: opacity 0.5s ease 0; }
-  .timeline dl dd .events:not(.expanded):hover {
-    cursor: pointer; }
-    .timeline dl dd .events:not(.expanded):hover p {
-      max-height: 6.5em;
-      -webkit-transition: max-height 0.2s ease-out 0.6s;
-      -moz-transition: max-height 0.2s ease-out 0.6s;
-      transition: max-height 0.2s ease-out 0.6s; }
-  .timeline dl dd .events.expanded p {
-    max-height: 40em;
-    -webkit-transition: max-height 0.2s ease-out 0s;
-    -moz-transition: max-height 0.2s ease-out 0s;
-    transition: max-height 0.2s ease-out 0s; }
-    .timeline dl dd .events.expanded p .mask {
-      opacity: 0;
-      -webkit-transition: opacity 0.5s ease 0;
-      -moz-transition: opacity 0.5s ease 0;
-      transition: opacity 0.5s ease 0; }
-@media (min-width: 768px) {
-  .timeline dl dd.pos-right .time {
-    margin-left: auto;
-    left: auto;
-    right: 50%; } }
+    @media (min-width: 561px) and (max-width: 767px) {
+      .timeline dl dt.profile-picture {
+        margin-left: 20px; } }
+    .timeline dl dt.profile-picture img {
+      width: 80px; }
+  @media (max-width: 560px) {
+    .timeline dl dt {
+      margin: 0 auto 30px; } }
+  .timeline dl dd .time {
+    width: auto; }
+    @media (max-width: 560px) {
+      .timeline dl dd .time {
+        top: 0;
+        position: static; } }
+    @media (min-width: 561px) and (max-width: 767px) {
+      .timeline dl dd .time {
+        top: 0;
+        left: 90px; } }
+  @media (max-width: 560px) {
+    .timeline dl dd .circ {
+      display: none; } }
+  .timeline dl dd .events {
+    padding-bottom: 10px;
+    -webkit-box-shadow: 0 0 8px #ccc;
+    -moz-box-shadow: 0 0 8px #ccc;
+    box-shadow: 0 0 8px #ccc;
+    -webkit-transition: box-shadow 0.2s ease;
+    -moz-transition: box-shadow 0.2s ease;
+    transition: box-shadow 0.2s ease; }
+    .timeline dl dd .events:not(.expanded):hover {
+      -webkit-box-shadow: 0 0 12px #aaa;
+      -moz-box-shadow: 0 0 12px #aaa;
+      box-shadow: 0 0 12px #aaa; }
+    .timeline dl dd .events:not(.expanded):active {
+      -webkit-box-shadow: 0 0 24px #ccc;
+      -moz-box-shadow: 0 0 24px #ccc;
+      box-shadow: 0 0 24px #ccc; }
+    .timeline dl dd .events.expanded {
+      -webkit-box-shadow: 0 0 4px #ddd;
+      -moz-box-shadow: 0 0 4px #ddd;
+      box-shadow: 0 0 4px #ddd; }
+    @media (max-width: 560px) {
+      .timeline dl dd .events {
+        float: none !important;
+        margin-top: 0;
+        width: 100% !important; }
+        .timeline dl dd .events:before {
+          border-color: transparent transparent white transparent !important;
+          left: 12px !important;
+          top: -12px !important; } }
+    @media (min-width: 561px) and (max-width: 767px) {
+      .timeline dl dd .events {
+        float: left !important;
+        left: 90px; } }
+    .timeline dl dd .events .logo-container {
+      height: 48px;
+      margin-right: 10px; }
+      .timeline dl dd .events .logo-container .vertical-helper {
+        height: 100%;
+        display: inline-block;
+        vertical-align: middle; }
+      .timeline dl dd .events .logo-container img {
+        vertical-align: middle;
+        margin-right: 0; }
+    .timeline dl dd .events img {
+      width: 48px;
+      height: auto; }
+      @media (max-width: 560px) {
+        .timeline dl dd .events img {
+          display: none; } }
+    .timeline dl dd .events .events-body .events-heading {
+      margin-bottom: 5px; }
+    .timeline dl dd .events .events-body p {
+      font-size: 0.9em;
+      padding-right: 1em;
+      margin-bottom: 0;
+      position: relative;
+      max-height: 2.8em;
+      -webkit-transition: max-height 0.2s ease-out 0s;
+      -moz-transition: max-height 0.2s ease-out 0s;
+      transition: max-height 0.2s ease-out 0s; }
+      .timeline dl dd .events .events-body p .mask {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 1.5em;
+        opacity: 1;
+        background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+        /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, #ffffff));
+        /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+        /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+        /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+        /* IE10+ */
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+        /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+        /* IE6-9 */
+        -webkit-transition: opacity 0.5s ease 0;
+        -moz-transition: opacity 0.5s ease 0;
+        transition: opacity 0.5s ease 0; }
+    .timeline dl dd .events:not(.expanded):hover {
+      cursor: pointer; }
+      .timeline dl dd .events:not(.expanded):hover p {
+        max-height: 6.5em;
+        -webkit-transition: max-height 0.2s ease 0.6s;
+        -moz-transition: max-height 0.2s ease 0.6s;
+        transition: max-height 0.2s ease 0.6s; }
+    .timeline dl dd .events.expanded p {
+      max-height: 40em;
+      -webkit-transition: max-height 0.2s ease 0s;
+      -moz-transition: max-height 0.2s ease 0s;
+      transition: max-height 0.2s ease 0s; }
+      .timeline dl dd .events.expanded p .mask {
+        opacity: 0;
+        -webkit-transition: opacity 0.5s ease 0;
+        -moz-transition: opacity 0.5s ease 0;
+        transition: opacity 0.5s ease 0; }
+  @media (min-width: 768px) {
+    .timeline dl dd.pos-right .time {
+      margin-left: auto;
+      left: auto;
+      right: 50%; } }
 
 .IN-widget {
   font-size: 1em; }

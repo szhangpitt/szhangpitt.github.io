@@ -335,6 +335,8 @@ article {
 
 
 .timeline {
+	margin-top: -40px;
+
 	dl {
 		&:before {
 			@media (max-width: 560px) {
@@ -347,15 +349,6 @@ article {
 				top: 76px;
 			}
 		}
-
-		// .current .events {
-		// 			@include box-shadow (0 0 8px $aqua-light);
-
-		// 			&:hover {
-		// 				@include box-shadow (0 0 12px $aqua-dark);
-
-		// 			}
-		// 		}
 
 		dt {
 			&.profile-picture {
@@ -413,6 +406,10 @@ article {
 
 				&:not(.expanded):active {
 					@include box-shadow (0 0 24px #ccc);
+				}
+
+				&.expanded {
+					@include box-shadow(0 0 4px #ddd);
 				}
 
 
@@ -493,14 +490,14 @@ article {
 
 					p{
 						max-height: 6.5em;
-						@include transition(max-height 0.2s ease-out 0.6s);
+						@include transition(max-height 0.2s ease 0.6s);
 					}
 				}
 
 				&.expanded {
 					p {
 						max-height: 40em;
-						@include transition(max-height 0.2s ease-out 0s);
+						@include transition(max-height 0.2s ease 0s);
 
 						.mask {
 							opacity: 0;
