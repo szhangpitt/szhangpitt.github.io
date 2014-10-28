@@ -128,7 +128,7 @@
 
     <section id="step4" class="step text-center" ng-class="{'folded': completedSection >= 4}">
       <div class="content">
-        <h2><a class="btn btn-primary btn-lg" ng-click="scrollToSection(4); displaySectionContent(4, 'positions')">Jobs I have done...</a></h2>
+        <h2><a class="btn btn-primary btn-lg" ng-click="scrollToSection(4); displaySectionContent(4, 'positions')">Positions I have taken...</a></h2>
         <div load-progress-icon iconclass="glyphicon glyphicon-briefcase" progress="{{loadPercentage.positions}}"></div>
         <p ng-if="positions.length === 0" visible-on-mark mark="{{visible('positions')}}">There is no positions information on your profile. Add some to let it show up here. </p>
         <div class="row" visible-on-mark mark="{{visible('positions')}}">
