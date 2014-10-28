@@ -1,8 +1,6 @@
 szhangpitt.github.io
 ====================
 
-My Github IO pages
-
 This is a web app utilizing LinkedIn API to make your profile more impressive. Works from iPhone to desktop browsers, including Chrome, Firefox, Safari tested. 
 
 Try with your LinkedIn profile at http://szhangpitt.github.io/?view=me 
