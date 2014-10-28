@@ -7,6 +7,9 @@ html, body {
 html {
   overflow-y: scroll; }
 
+body {
+  background: url('../images/debut_light/debut_light.png'); }
+
 .glyph-progress {
   height: 96px;
   width: 96px;
@@ -99,7 +102,6 @@ header {
   overflow: hidden; }
 
 article section.step {
-  background: #fafafa;
   height: 100%;
   position: relative;
   -webkit-box-shadow: 0 -6px 6px #ccc;
