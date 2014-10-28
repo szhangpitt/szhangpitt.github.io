@@ -10,7 +10,7 @@ var appModule = angular.module('tagdemo', ['ngRoute']);
 appModule.controller('AppController', ['$scope', '$rootScope', 'TagService', '$location',
     function ($scope, $rootScope, TagService, $location) {
         $scope.$location = $location;
-        var linkedInId = getUrlVars()['view'] === 'shaopeng' && 'shaopeng' || 'me';
+        var linkedInId = getUrlVars()['view'] === 'me' && 'me' || 'shaopeng';
         var publicProfileUrl = encodeURIComponent('www.linkedin.com/in/shaopengzhang/');
 
         if(linkedInId === 'me') {
