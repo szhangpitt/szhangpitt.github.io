@@ -82,7 +82,7 @@ appModule.controller('UIController', ['$scope', '$rootScope', 'TagService',
     function ($scope, $rootScope, TagService) {
         $scope.SHAOPENG_LINKIEDIN_ID = TagService.SHAOPENG_LINKIEDIN_ID;
         $scope.loadPercentage = {
-            linkedIn:   20,
+            linkedIn:   0,
             summary:    0,
             educations: 0,
             skills:     0,
