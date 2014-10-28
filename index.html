@@ -41,9 +41,11 @@
 
          <div ng-if="!$parent.staticApp" class="how-to-use transparent-first" ng-class="{'visible': $parent.linkedInLoaded() && !$parent.linkedInAuthenticated() && !visible('linkedIn'), 'collapsed': $parent.linkedInLoaded() && $parent.linkedInAuthenticated()}">
            <span class="fa fa-hand-o-up center-block bouncing-animation top-space-xs" visible-on-time time="1500"></span>
-           <p class=" top-space-sm" visible-on-time time="1500">{{$parent.possiblyOnMobile && 'Tap' || 'Click'}} and sign in to access your profile.</p>
+           <p class="top-space-sm" visible-on-time time="1500">Sign in to access your profile.</p>
            <p visible-on-time time="1500"> Or, see a <a href=".?view=shaopeng">demo of the developer</a> first. </p>
-           <p ng-if="$parent.possiblyOnMobile" visible-on-time time="1500"><i>Are you using a smart phone or tablet? You probably need to come back to this page and refresh after you sign in. </i></p>
+           
+           <p class="top-space-lg text-lg" ng-if="$parent.possiblyOnMobile" visible-on-time time="1500"><i><strong>Are you using a smart phone or tablet?</strong></i></p>
+           <p visible-on-time time="1500">After you sign in, please come back and refresh this page. </p>
 
          </div>
 
