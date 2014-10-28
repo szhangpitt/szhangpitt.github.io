@@ -51,6 +51,9 @@ body {
   .glyph-progress.reverse.loaded .bg {
     height: 100%; }
 
+#step2 .glyph-progress {
+  left: -13px; }
+
 .transparent-first {
   opacity: 0;
   -webkit-transition: opacity 0.3s ease-out;

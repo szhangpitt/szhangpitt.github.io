@@ -89,9 +89,12 @@ body {
 			height: 100%;
 		}
 	}
+}
 
-
-
+#step2 {
+	.glyph-progress {
+		left: -13px;
+	}
 }
 
 .transparent-first {
