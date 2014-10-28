@@ -1,4 +1,4 @@
-@import  "bootflat/scss/bootflat/_global.scss";
+@import  "assets/libs/bootflat/scss/bootflat/_global.scss";
 
 
 *{
@@ -173,7 +173,14 @@ article {
 				margin-bottom: 30px;
 			}
 
-			
+			.btn.btn-primary{
+				@include box-shadow(0 0 8px #ccc);
+
+				&:active {
+					background-color: $aqua-dark;
+					border-color: $aqua-dark;
+				}
+			}
 
 			.form-group {
 				position: relative;

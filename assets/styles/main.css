@@ -112,6 +112,13 @@ article section.step {
     article section.step .content h2 {
       margin-top: 0;
       margin-bottom: 30px; }
+    article section.step .content .btn.btn-primary {
+      -webkit-box-shadow: 0 0 8px #ccc;
+      -moz-box-shadow: 0 0 8px #ccc;
+      box-shadow: 0 0 8px #ccc; }
+      article section.step .content .btn.btn-primary:active {
+        background-color: #3BAFDA;
+        border-color: #3BAFDA; }
     article section.step .content .form-group {
       position: relative; }
     article section.step .content input + .glyphicon {
