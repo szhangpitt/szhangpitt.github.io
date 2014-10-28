@@ -273,7 +273,9 @@ article {
 	}
 
 	50% {
-		color: lighten($darkgray-dark, 60%);		
+		// color: lighten($darkgray-dark, 60%);
+		color: transparent;	
+		text-shadow: 0 1px 6px rgba(0,0,0,0.3);	
 	}
 
 	100% {
