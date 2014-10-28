@@ -1,4 +1,4 @@
-szhangpitt.github.io
+Impressive
 ====================
 
 This is a web app utilizing LinkedIn API to make your profile more impressive. Works from iPhone to desktop browsers, including Chrome, Firefox, Safari tested. 
