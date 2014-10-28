@@ -82,7 +82,7 @@ appModule.controller('UIController', ['$scope', '$rootScope', 'TagService',
     function ($scope, $rootScope, TagService) {
         $scope.SHAOPENG_LINKIEDIN_ID = TagService.SHAOPENG_LINKIEDIN_ID;
         $scope.loadPercentage = {
-            linkedIn:   0,
+            linkedIn:   20,
             summary:    0,
             educations: 0,
             skills:     0,
@@ -92,16 +92,14 @@ appModule.controller('UIController', ['$scope', '$rootScope', 'TagService',
         var imgLoadInterval, tagLoadInterval, advLoadInterval;
 
         $scope.$on('PROFILE', function(event, data) {
-            //$scope.$apply(function() {
                 $scope.loadPercentage.linkedIn = 100;
                 $scope.completeSection(0);
 
                 $scope.profile = TagService.profile;   
-                $scope.summary = TagService.profile.summary;  
-                $scope.educations = TagService.educations;   
-                $scope.skills = TagService.skills;
-                $scope.positions = TagService.positions;    
-           // });
+                $scope.summary = TagService.profile.summary || ' ';  
+                $scope.educations = TagService.educations || [];   
+                $scope.skills = TagService.skills || [];
+                $scope.positions = TagService.positions || [];    
     });
 
         $scope.$on('PROFILE_ALL', function(event, data) {
