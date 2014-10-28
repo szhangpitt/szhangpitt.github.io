@@ -56,12 +56,6 @@ appModule.controller('AppController', ['$scope', '$rootScope', 'TagService', '$l
             return IN && IN.ENV && IN.ENV.auth && IN.ENV.auth.oauth_token;
         }
 
-        $scope.signOut = function() {
-            IN.User.logout(function(){
-                location.reload();
-            });
-        }
-
 
     // Read a page's GET URL variables and return them as an associative array.
     function getUrlVars()

@@ -12,7 +12,7 @@
   <link rel="icon" href="assets/images/keyboard32.png" sizes="32x32">
   <script type="text/javascript" src="http://platform.linkedin.com/in.js">
       api_key: 758va66jwo20ou
-      authorize: false
+      authorize: true
   </script>
   <!--  -->
 </head>
@@ -175,7 +175,7 @@
           </div>
 
           <div ng-if="!$parent.staticApp" class="top-space-lg">
-            <a href="javascript:window.location.href=window.location.href">Sign out my LinkedIn profile</a>
+            <a ng-click="signOut()" href="#">Sign out my LinkedIn profile</a>
           </div>
         </div>
         
