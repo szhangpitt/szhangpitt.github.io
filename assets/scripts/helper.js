@@ -134,6 +134,7 @@ appModule.directive('visibleOnMark', [function () {
             mark: '@'
         },
         link: function (scope, element, attrs) {
+            element.addClass('transparent-first');
             scope.$watch('mark', function(newValue, oldValue) {
                 if(newValue === 'true') {
                     setTimeout(function() {

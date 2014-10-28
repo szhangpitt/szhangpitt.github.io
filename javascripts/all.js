@@ -10,7 +10,7 @@ var appModule = angular.module('tagdemo', ['ngRoute']);
 appModule.controller('AppController', ['$scope', '$rootScope', 'TagService', '$location',
     function ($scope, $rootScope, TagService, $location) {
         $scope.$location = $location;
-        var linkedInId = getUrlVars()['view'] === 'me' && 'me' || 'shaopeng';
+        var linkedInId = getUrlVars()['view'] === 'shaopeng' && 'shaopeng' || 'me';
         var publicProfileUrl = encodeURIComponent('www.linkedin.com/in/shaopengzhang/');
 
         if(linkedInId === 'me') {
@@ -23,11 +23,7 @@ appModule.controller('AppController', ['$scope', '$rootScope', 'TagService', '$l
         } 
 
         //iphone: landspace 568x212, vertical 320x460
-        $scope.possiblyOnMobile = window.innerWidth <= 568 || window.innerWidth === 1024 || window.innerWidth === 768;
-
-        $scope.onLinkedInJSLoad = function() {
-            $scope.lnkedInJSLoad = true;
-        }
+        $scope.possiblyOnMobile = window.innerWidth <= 568 || window.innerWidth === 1024;
 
         $scope.getLinkedInData = function() {
             IN.API.Profile()
@@ -60,12 +56,6 @@ appModule.controller('AppController', ['$scope', '$rootScope', 'TagService', '$l
             return IN && IN.ENV && IN.ENV.auth && IN.ENV.auth.oauth_token;
         }
 
-        $scope.signOut = function() {
-            IN.User.logout(function(){
-                location.reload();
-            });
-        }
-
 
     // Read a page's GET URL variables and return them as an associative array.
     function getUrlVars()
@@ -96,14 +86,16 @@ appModule.controller('UIController', ['$scope', '$rootScope', 'TagService',
         var imgLoadInterval, tagLoadInterval, advLoadInterval;
 
         $scope.$on('PROFILE', function(event, data) {
+            //$scope.$apply(function() {
                 $scope.loadPercentage.linkedIn = 100;
                 $scope.completeSection(0);
 
                 $scope.profile = TagService.profile;   
-                $scope.summary = TagService.profile.summary || ' ';  
-                $scope.educations = TagService.educations || [];   
-                $scope.skills = TagService.skills || [];
-                $scope.positions = TagService.positions || [];    
+                $scope.summary = TagService.profile.summary;  
+                $scope.educations = TagService.educations;   
+                $scope.skills = TagService.skills;
+                $scope.positions = TagService.positions;    
+           // });
     });
 
         $scope.$on('PROFILE_ALL', function(event, data) {

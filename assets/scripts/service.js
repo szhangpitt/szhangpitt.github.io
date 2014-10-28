@@ -63,7 +63,7 @@ appModule.service('TagService', ['$http', '$rootScope', '$q', function ($http, $
     }
 
     function flattenSkills(INSkills) {
-        var skills = INSkills.values || [];
+        var skills = INSkills && (INSkills.values || []) || [];
         var a = [];
 
         if(angular.isArray(skills)){
@@ -80,7 +80,7 @@ appModule.service('TagService', ['$http', '$rootScope', '$q', function ($http, $
     function getStaticCompanyLogos(INPositions) {
         if(INPositions.values && angular.isArray(INPositions.values)) {
             for (var i = 0; i < INPositions.values.length; i++ ) {
-                INPositions.values[i].logoUrl = that.companyUrlMap[INPositions.values[i].id];
+                INPositions.values[i].logoUrl = that.companyUrlMap[INPositions.values[i].company.id].logoUrl;
             }
         }
         return INPositions;
@@ -156,18 +156,23 @@ appModule.service('TagService', ['$http', '$rootScope', '$q', function ($http, $
         
         var a = [];
 
+        if(positions.length === 0 || (positions[0] && !positions[0].startDate)) {
+            return [];
+        }
+
         if(angular.isArray(positions)) {
 
             var even = 0;
             positions.forEach(function(position, index, array) {
 
-
                 if (a.length === 0) {
                     //push this year first
-                    if(position.startDate.year !== new Date().getFullYear()) {
+                    if(!position.startDate || position.startDate.year !== new Date().getFullYear()) {
                         a.push({mark: new Date().getFullYear()});
+                        position.startDate = position.startDate || {year: new Date().getFullYear(), month: 0}
                     }
                     //on the first position, push a year mark first
+
                     a.push({mark: position.startDate.year});
                     position.even = even;
                     a.push(position);
