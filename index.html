@@ -30,7 +30,7 @@
     <article ng-controller="UIController" class="linear-scroll-animation">
       <section id="step0" class="step text-center" ng-class="{'folded': completedSection >= 0}">
         <div class="content">
-          <div load-progress-icon iconclass="fa fa-linkedin-square glyphicon" progress="{{loadPercentage.linkedIn}}" ></div>
+          <div load-progress-icon iconclass="fa fa-linkedin-square glyphicon" progress="{{loadPercentage.linkedIn}}" title="LinkedIn, the LinkedIn logo, the IN logo and InMail are registered trademarks or trademarks of LinkedIn Corporation and its affiliates in the United States and/or other countries."></div>
 
           <div ng-if="!$parent.staticApp">
            <script type="in/Login" data-onAuth="loadData">
@@ -117,11 +117,14 @@
 
     <section id="step3" class="step text-center" ng-class="{'folded': completedSection >= 3}">
       <div class="content" >
-        <h2><a class="btn btn-lg btn-primary" ng-click="scrollToSection(3);displaySectionContent(3, 'skills')" >What skills do I have?</a></h2>
+        <h2><a class="btn btn-lg btn-primary" ng-click="scrollToSection(3);displaySectionContent(3, 'skills'); highlightSkills(-1);" >What skills do I have?</a></h2>
         <div load-progress-icon iconclass="glyphicon glyphicon-globe" progress="{{loadPercentage.skills}}"></div>
         <p ng-if="skills.length === 0" visible-on-mark mark="{{visible('skills')}}">There is no skills information on your profile. Add some to let it show up here. </p>
-        <ul class="adv-cloud">
-          <li ng-repeat="skill in skills" ng-style="{}" style="{{twinkleStyle(skill.value, loadPercentage.skills)}}" visible-on-mark mark="{{visible('skills')}}">{{skill.name}}</li>
+        <div ng-if="profile.skills.categories" class="btn-group" ng-blur="highlightSkills(-1)">
+          <button ng-repeat="c in profile.skills.categories track by $index" type="button" class="btn btn-default" ng-class="{'active': highlightingCategoryId === $index}" ng-click="highlightSkills($index)">{{c.name}}</button>
+        </div>
+        <ul class="adv-cloud" ng-class="{'blur': blurringSkills}">
+          <li ng-repeat="skill in skills track by $index" data-category-id="{{skill.categoryId}}"  ng-class="{'highlight': +skill.categoryId === +highlightingCategoryId}" style="{{twinkleStyle(skill.value, $index, skills.length)}}" visible-on-mark mark="{{visible('skills')}}">{{skill.name}}</li>
         </ul>
 
       </div>
@@ -201,7 +204,9 @@
   </article>
 </div>
 
-
+<footer class="text-center">
+  <p class="text-muted">Copyright © 2008 Shaopeng Zhang</p>
+</footer>
 <script src="assets/libs/libs.js"></script>
 <script src="assets/scripts/all.js"></script>
 
