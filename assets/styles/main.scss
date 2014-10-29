@@ -7,7 +7,7 @@
 
 
 html, body{
-	// height: 100%;
+	height: 100%;
 	background: #fafafa;
 }
 
@@ -19,8 +19,24 @@ body {
 	background: url('../images/debut_light/debut_light.png')
 }
 
+.article-viewport {
+	min-height: 100%; 
+	margin-bottom: -20px;
+	&:after {
+		content: "";
+		display: block;
+	}
+}
+
+footer, .article-viewport:after {
+	height: 20px;
+}
+
 footer {
 	font-size: 10px;
+	p {
+		margin-bottom: 0;
+	}
 }
 
 .glyph-progress {
@@ -95,6 +111,13 @@ footer {
 	}
 }
 
+
+
+#step0 {
+	.glyph-progress {
+		left: 12px;
+	}
+}
 #step2 {
 	.glyph-progress {
 		left: -13px;

@@ -2,6 +2,7 @@
   padding: 0; }
 
 html, body {
+  height: 100%;
   background: #fafafa; }
 
 html {
@@ -10,8 +11,20 @@ html {
 body {
   background: url('../images/debut_light/debut_light.png'); }
 
+.article-viewport {
+  min-height: 100%;
+  margin-bottom: -20px; }
+  .article-viewport:after {
+    content: "";
+    display: block; }
+
+footer, .article-viewport:after {
+  height: 20px; }
+
 footer {
   font-size: 10px; }
+  footer p {
+    margin-bottom: 0; }
 
 .glyph-progress {
   height: 96px;
@@ -53,6 +66,9 @@ footer {
     height: 100%; }
   .glyph-progress.reverse.loaded .bg {
     height: 100%; }
+
+#step0 .glyph-progress {
+  left: 12px; }
 
 #step2 .glyph-progress {
   left: -13px; }
