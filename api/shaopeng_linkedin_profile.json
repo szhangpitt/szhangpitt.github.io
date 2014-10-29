@@ -214,210 +214,266 @@
     "publicProfileUrl": "https://www.linkedin.com/in/shaopengzhang",
     "skills": {
         "_total": 34,
+        "categories": [
+            {
+                "name": "Coding"
+            }, 
+            {
+                "name": "Design"
+            }
+        ],
         "values": [
             {
                 "id": 598333027,
                 "skill": {
                     "name": "jQuery"
-                }
+                },
+                "categoryId": 0
             },
             {
                 "id": 598333028,
                 "skill": {
                     "name": "HTML 5"
-                }
+                },
+                "categoryId": 0
             },
             {
                 "id": 598333029,
                 "skill": {
                     "name": "JavaScript"
-                }
-            },
-            {
-                "id": 598333030,
-                "skill": {
-                    "name": "User Interface Design"
-                }
-            },
-            {
-                "id": 598333031,
-                "skill": {
-                    "name": "PHP"
-                }
-            },
-            {
-                "id": 598333032,
-                "skill": {
-                    "name": "Java"
-                }
-            },
-            {
-                "id": 598333033,
-                "skill": {
-                    "name": "Prototyping"
-                }
-            },
-            {
-                "id": 598333034,
-                "skill": {
-                    "name": "AJAX"
-                }
-            },
-            {
-                "id": 598333035,
-                "skill": {
-                    "name": "CSS"
-                }
-            },
-            {
-                "id": 598333036,
-                "skill": {
-                    "name": "Information Architecture"
-                }
-            },
-            {
-                "id": 598333037,
-                "skill": {
-                    "name": "ActionScript"
-                }
-            },
-            {
-                "id": 598333038,
-                "skill": {
-                    "name": "Web Applications"
-                }
-            },
-            {
-                "id": 598333039,
-                "skill": {
-                    "name": "HTML"
-                }
-            },
-            {
-                "id": 598333040,
-                "skill": {
-                    "name": "Flex"
-                }
-            },
-            {
-                "id": 598333041,
-                "skill": {
-                    "name": "WPF"
-                }
-            },
-            {
-                "id": 598333042,
-                "skill": {
-                    "name": "CSS3"
-                }
-            },
-            {
-                "id": 598333043,
-                "skill": {
-                    "name": "Flash Catalyst"
-                }
-            },
-            {
-                "id": 598333044,
-                "skill": {
-                    "name": "SQL"
-                }
-            },
-            {
-                "id": 598333045,
-                "skill": {
-                    "name": "Silverlight"
-                }
-            },
-            {
-                "id": 598333046,
-                "skill": {
-                    "name": "Expression Blend"
-                }
-            },
-            {
-                "id": 598333047,
-                "skill": {
-                    "name": "Dreamweaver"
-                }
-            },
-            {
-                "id": 598333048,
-                "skill": {
-                    "name": "ClearCase"
-                }
-            },
-            {
-                "id": 598333049,
-                "skill": {
-                    "name": "CoffeeScript"
-                }
-            },
-            {
-                "id": 598333050,
-                "skill": {
-                    "name": "Node.js"
-                }
-            },
-            {
-                "id": 598333051,
-                "skill": {
-                    "name": "Information Visualization"
-                }
-            },
-            {
-                "id": 598333052,
-                "skill": {
-                    "name": "Project Management"
-                }
-            },
-            {
-                "id": 598333053,
-                "skill": {
-                    "name": "bootstrap"
-                }
-            },
-            {
-                "id": 598333054,
-                "skill": {
-                    "name": "d3.js"
-                }
-            },
-            {
-                "id": 598333055,
-                "skill": {
-                    "name": "Usability Testing"
-                }
-            },
-            {
-                "id": 598333056,
-                "skill": {
-                    "name": "Python"
-                }
-            },
-            {
-                "id": 598333057,
-                "skill": {
-                    "name": "SASS"
-                }
-            },
-            {
-                "id": 598333058,
-                "skill": {
-                    "name": "Amazon EC2"
-                }
+                },
+                "categoryId": 0
             },
             {
                 "id": 598333059,
                 "skill": {
                     "name": "AngularJS"
-                }
+                },
+                "categoryId": 0
             },
+            {
+                "id": 598333053,
+                "skill": {
+                    "name": "Bootstrap"
+                },
+                "categoryId": 0
+            },
+            {
+                "id": 598333030,
+                "skill": {
+                    "name": "User Interface Design"
+                },
+                "categoryId": 1
+            },
+            {
+                "id": 598333031,
+                "skill": {
+                    "name": "PHP"
+                },
+                "categoryId": 0
+            },
+            {
+                "id": 598333057,
+                "skill": {
+                    "name": "SASS"
+                },
+                "categoryId": 0
+            },
+            {
+                "id": 598333033,
+                "skill": {
+                    "name": "Prototyping"
+                },
+                "categoryId": 1
+            },
+            {
+                "id": 598333034,
+                "skill": {
+                    "name": "AJAX"
+                },
+                "categoryId": 0
+            },
+            {
+                "id": 598333035,
+                "skill": {
+                    "name": "CSS"
+                },
+                "categoryId": 0
+            },
+            {
+                "id": 598333036,
+                "skill": {
+                    "name": "Information Architecture"
+                },
+                "categoryId": 1
+            },
+            {
+                "id": 598333037,
+                "skill": {
+                    "name": "ActionScript"
+                },
+                "categoryId": 0
+            },
+            {
+                "id": 598333038,
+                "skill": {
+                    "name": "Web Applications"
+                },
+                "categoryId": 0
+            },
+            {
+                "id": 598333039,
+                "skill": {
+                    "name": "HTML"
+                },
+                "categoryId": 0
+            },
+            {
+                "id": 598333040,
+                "skill": {
+                    "name": "Flex"
+                },
+                "categoryId": 0
+            },
+            {
+                "id": 598333041,
+                "skill": {
+                    "name": "WPF"
+                },
+                "categoryId": 0
+            }, 
+            {
+                "skill": {
+                    "name": "Adobe Illustrator"
+                },
+                "categoryId": 1
+            },
+            {
+                "id": 598333042,
+                "skill": {
+                    "name": "CSS3"
+                },
+                "categoryId": 0
+            },
+            {
+                "id": 598333043,
+                "skill": {
+                    "name": "Flash Catalyst"
+                },
+                "categoryId": 1
+            },
+            {
+                "id": 598333044,
+                "skill": {
+                    "name": "SQL"
+                },
+                "categoryId": 0
+            },
+            {
+                "id": 598333045,
+                "skill": {
+                    "name": "Silverlight"
+                },
+                "categoryId": 0
+            },
+            {
+                "id": 598333046,
+                "skill": {
+                    "name": "Expression Blend"
+                },
+                "categoryId": 1
+            },
+            {
+                "id": 598333047,
+                "skill": {
+                    "name": "Visio"
+                },
+                "categoryId": 1
+            },
+            {
+                "id": 598333048,
+                "skill": {
+                    "name": "ClearCase"
+                },
+                "categoryId": 0
+            },
+            {
+                "id": 598333049,
+                "skill": {
+                    "name": "CoffeeScript"
+                },
+                "categoryId": 0
+            },
+            {
+                "id": 598333050,
+                "skill": {
+                    "name": "Node.js"
+                },
+                "categoryId": 0
+            },
+            {
+                "id": 598333051,
+                "skill": {
+                    "name": "Information Visualization"
+                },
+                "categoryId": 1
+            },
+            {
+                "id": 598333052,
+                "skill": {
+                    "name": "Project Management"
+                },
+                "categoryId": 1
+            },
+            {
+                "id": 598333054,
+                "skill": {
+                    "name": "d3.js"
+                },
+                "categoryId": 0
+            },
+            {
+                "id": 598333055,
+                "skill": {
+                    "name": "Usability Testing"
+                },
+                "categoryId": 1
+            },
+            {
+                "id": 598333056,
+                "skill": {
+                    "name": "Python"
+                },
+                "categoryId": 0
+            },
+            {
+                "id": 598333056,
+                "skill": {
+                    "name": "Requirement Analysis"
+                },
+                "categoryId": 1
+            },
+            {
+                "id": 598333032,
+                "skill": {
+                    "name": "Java"
+                },
+                "categoryId": 0
+            },
+            {
+                "id": 598333058,
+                "skill": {
+                    "name": "Amazon EC2"
+                },
+                "categoryId": 0
+            },
+
             {
                 "id": 598333060,
                 "skill": {
                     "name": "User-centered Design"
-                }
+                },
+                "categoryId": 1
             }
         ]
     },

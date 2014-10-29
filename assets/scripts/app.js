@@ -147,10 +147,11 @@ appModule.controller('UIController', ['$scope', '$rootScope', 'TagService',
             return 100;
         }
         
-        $scope.twinkleStyle = function(value, loadPercentage) {
-            var transitionString = 'top 0.4s ease ' +  (value * 3).toFixed(2) + 's' + ',' + 'opacity 0.4s ease ' +  value * 3 + 's' + ';';// + ',' + 'transform 0.4s ease ' + ';';
+        $scope.twinkleStyle = function(value, index, length) {
+            var transitionString = 'color 0.5s ease, text-shadow 0.5s ease, ' + 'top 0.4s ease ' +  (value * 3).toFixed(2) + 's' + ',' + 'opacity 0.4s ease ' +  value * 3 + 's' + ';';// + ',' + 'transform 0.4s ease ' + ';';
             var animationDelayString = (10 + value * 6) + 's' + ';'; 
-            var styleString = 'font-size: ' + (16 + value * 12) + 'px' + ';' +
+            var fontSizeWeight = 1.0 * index / length < 0.06 ? 32 : (1.0 * index / length < 0.36 ? 24 : 16); 
+            var styleString = 'font-size: ' + (fontSizeWeight + value * 8) + 'px' + ';' +
             'line-height: ' + '1.5' + ';' +
             /*'top: ' + (loadPercentage === 100) && '0' || '10px' + ';' +*/
             '-webkit-transition: ' + transitionString +
@@ -189,6 +190,22 @@ appModule.controller('UIController', ['$scope', '$rootScope', 'TagService',
                 return $scope.loadPercentage[identifier] === 100;
             }
         }
+
+
+        $scope.blurringSkills = false;
+        $scope.highlightingCategoryId = -1;
+        $scope.highlightSkills = function(categoryId) {
+
+            if(categoryId === -1) {
+                $scope.blurringSkills = false;
+                $scope.highlightingCategoryId = -1;
+            }
+            else {
+                $scope.blurringSkills = true;
+                $scope.highlightingCategoryId = categoryId;
+            }
+        }
+
 
 
     }]);

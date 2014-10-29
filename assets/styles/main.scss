@@ -19,6 +19,10 @@ body {
 	background: url('../images/debut_light/debut_light.png')
 }
 
+footer {
+	font-size: 10px;
+}
+
 .glyph-progress {
 	height: 96px;
 	width: 96px;
@@ -181,10 +185,12 @@ article {
 				margin-bottom: 30px;
 			}
 
-			.btn.btn-primary{
+			& > .btn.btn-primary, 
+			& h2 > .btn.btn-primary, 
+			.btn-group{
 				@include box-shadow(0 0 8px #ccc);
 
-				&:active {
+				&:not(.button-group):active {
 					background-color: $aqua-dark;
 					border-color: $aqua-dark;
 				}
@@ -225,6 +231,23 @@ article {
 
 
 .adv-cloud {
+	// &:hover {
+	&.blur {
+		// li {
+		li {
+			text-shadow: 0 1px 8px #aaa;
+			color: transparent;
+			@include animation (none !important);
+			@include transition (text-shadow 0.2s ease);
+
+			// &:hover {
+			&.highlight {
+				text-shadow: 0 1px 3px #ddd;
+				color: $darkgray-dark;
+			}
+		}
+	}
+
 	li {
 		font-family: monospace, "Open Sans";
 		list-style-type: none;

@@ -10,6 +10,9 @@ html {
 body {
   background: url('../images/debut_light/debut_light.png'); }
 
+footer {
+  font-size: 10px; }
+
 .glyph-progress {
   height: 96px;
   width: 96px;
@@ -117,11 +120,11 @@ article section.step {
     article section.step .content h2 {
       margin-top: 0;
       margin-bottom: 30px; }
-    article section.step .content .btn.btn-primary {
+    article section.step .content > .btn.btn-primary, article section.step .content h2 > .btn.btn-primary, article section.step .content .btn-group {
       -webkit-box-shadow: 0 0 8px #ccc;
       -moz-box-shadow: 0 0 8px #ccc;
       box-shadow: 0 0 8px #ccc; }
-      article section.step .content .btn.btn-primary:active {
+      article section.step .content > .btn.btn-primary:not(.button-group):active, article section.step .content h2 > .btn.btn-primary:not(.button-group):active, article section.step .content .btn-group:not(.button-group):active {
         background-color: #3BAFDA;
         border-color: #3BAFDA; }
     article section.step .content .form-group {
@@ -146,6 +149,18 @@ article section.step {
     article section.step .content .text-lg {
       font-size: 1.3em; }
 
+.adv-cloud.blur li {
+  text-shadow: 0 1px 8px #aaa;
+  color: transparent;
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  animation: none !important;
+  -webkit-transition: text-shadow 0.2s ease;
+  -moz-transition: text-shadow 0.2s ease;
+  transition: text-shadow 0.2s ease; }
+  .adv-cloud.blur li.highlight {
+    text-shadow: 0 1px 3px #ddd;
+    color: #434A54; }
 .adv-cloud li {
   font-family: monospace, "Open Sans";
   list-style-type: none;

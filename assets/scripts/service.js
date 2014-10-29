@@ -69,7 +69,7 @@ appModule.service('TagService', ['$http', '$rootScope', '$q', function ($http, $
         if(angular.isArray(skills)){
             skills.forEach(function(element, index, array) {
                 if(element.skill) {
-                    a.push({name: element.skill.name, value: Math.random()});
+                    a.push({name: element.skill.name, value: Math.random(), categoryId: element.categoryId });
                 }
             });
         }
