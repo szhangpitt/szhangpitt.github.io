@@ -120,7 +120,7 @@
         <h2><a class="btn btn-lg btn-primary" ng-click="scrollToSection(3);displaySectionContent(3, 'skills'); highlightSkills(-1);" >What skills do I have?</a></h2>
         <div load-progress-icon iconclass="glyphicon glyphicon-globe" progress="{{loadPercentage.skills}}"></div>
         <p ng-if="skills.length === 0" visible-on-mark mark="{{visible('skills')}}">There is no skills information on your profile. Add some to let it show up here. </p>
-        <div ng-if="profile.skills.categories" class="btn-group" ng-blur="highlightSkills(-1)">
+        <div ng-if="profile.skills.categories" class="btn-group" ng-blur="highlightSkills(-1)" visible-on-mark mark="{{visible('skills')}}">
           <button ng-repeat="c in profile.skills.categories track by $index" type="button" class="btn btn-default" ng-class="{'active': highlightingCategoryId === $index}" ng-click="highlightSkills($index)">{{c.name}}</button>
         </div>
         <ul class="adv-cloud" ng-class="{'blur': blurringSkills}">
