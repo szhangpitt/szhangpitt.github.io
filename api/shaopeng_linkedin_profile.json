@@ -34,7 +34,7 @@
         ]
     },
     "firstName": "Shaopeng",
-    "headline": "User Interface Developer at Siemens Corporate Research",
+    "headline": "Senior Software Engineer at Bloomberg L.P.",
     "id": "qC72fmJGlB",
     "lastName": "Zhang",
     "pictureUrls": {
@@ -44,15 +44,33 @@
         ]
     },
     "positions": {
-        "_total": 7,
+        "_total": 8,
         "values": [
+            {
+                "company": {
+                    "id": 9999,
+                    "name": "Bloomberg L.P."
+                },
+                "id": 999999999,
+                "isCurrent": true,
+                "startDate": {
+                    "month": 1,
+                    "year": 2015
+                },
+                "summary": "(1) Developed OpenFIGI.com. A financial web site that facilitates requesting free-of-use, globally unique Financial Instrument Global Identifier (FIGI). \n(2) Constructed the frontend project structure, including Node, Bower, Gulp, LESS etc. \n(3) Implemented frontend workflow by integrating with backend services. \n(4) Implemented the UI with Angular.JS, Bootstrap etc. \n(5) Shared technical knowledge experiences with the team.  \n(6) Conducted internal web development consulting.",
+                "title": "Senior Software Engineer"
+            },
             {
                 "company": {
                     "id": 1043,
                     "name": "Siemens"
                 },
+                "endDate": {
+                    "month": 1,
+                    "year": 2015
+                },
                 "id": 210137822,
-                "isCurrent": true,
+                "isCurrent": false,
                 "startDate": {
                     "month": 1,
                     "year": 2013

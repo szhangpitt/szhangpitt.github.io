@@ -169,14 +169,14 @@
 
             <a ng-if="profile.publicProfileUrl" target="_blank" ng-href="{{profile.publicProfileUrl}}" class="btn btn-primary" ><span class="glyphicon glyphicon-new-window"></span>&nbsp;&nbsp;See {{$parent.staticApp && "Shaopeng's" || "My"}} LinkedIn Page</a>
           </div>
-          <div class="top-space" ng-if="$parent.staticApp">
+          <!-- <div class="top-space" ng-if="$parent.staticApp">
             <a class="btn btn-primary" ng-href=".?view=me">See My LinkedIn Profile in Action!</a>
-          </div>
+          </div> -->
           
-
+<!-- 
           <div ng-if="!$parent.staticApp" class="top-space">
             <a ng-click="signOut()" href="#">Sign out my LinkedIn profile</a>
-          </div>
+          </div> -->
 
           <div ng-if="!$parent.staticApp" class="top-space">
             <a href=".?view=shaopeng">Who developed this? </a>

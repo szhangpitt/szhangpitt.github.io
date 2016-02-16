@@ -5,6 +5,7 @@ appModule.service('TagService', ['$http', '$rootScope', '$q', function ($http, $
     // this.SHAOPENG_LINKIEDIN_ID = 'qC72fmJGlB';
 
     this.companyUrlMap = {};
+    this.companyUrlMap[9999] =  {id: 9999, logoUrl: "https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAN2AAAAJDEyMjUxZGE3LWRhZTQtNGRlMS05MmFmLTZmZjJkZjVlZjEzZA.png", name: "Bloomberg L.P."};
     this.companyUrlMap[1043] =  {id: 1043, logoUrl: "https://media.licdn.com/mpr/mpr/p/3/005/07b/00a/05def42.png", name: "Siemens"};
     this.companyUrlMap[507720] = {id: 507720, logoUrl: "https://media.licdn.com/mpr/mpr/p/3/000/032/14c/0fad638.png", name: "Beijing Jiaotong University"} ;
     this.companyUrlMap[3461] = {id: 3461, logoUrl: "https://media.licdn.com/mpr/mpr/p/7/000/2b5/1b3/37aeefe.png", name: "University of Pittsburgh"};
